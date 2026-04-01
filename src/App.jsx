@@ -1,23 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
-function FormulariodeEvento(){
-  return (
-    <form className = "form-evento">
-      <h2>Preencha para criar um evento:</h2>
-      <fieldset>
-        <label htmlFor="nome"> Qual o nome do evento?</label>
-        <input type="text" id="nome" />
-      </fieldset>
-    </form>
-  )
-}
+import "./App.css";
+import FormularioDeEvento from "./components/FormularioDeEvento";
 
 function App() {
-
   return (
     <>
       <main>
@@ -27,10 +11,10 @@ function App() {
         <section>
           <img src="/banner.png" alt="banner" />
         </section>
-        <FormulariodeEvento />
+        <FormularioDeEvento />
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
