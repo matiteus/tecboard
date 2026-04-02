@@ -1,3 +1,8 @@
-export default function Label({ texto, htmlfor }) {
-  return <label htmlFor={htmlfor}>{texto}</label>;
+import "./label.estilos.css";
+export default function Label({ children, htmlfor }) {
+  return (
+    <label className="label" htmlFor={htmlfor}>
+      {children}
+    </label>
+  );
 }
