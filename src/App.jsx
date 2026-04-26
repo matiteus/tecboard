@@ -29,7 +29,7 @@ function App() {
       <main>
         <Header />
         <Banner />
-        <FormularioDeEvento />
+        <FormularioDeEvento temas={temas} />
         {temas.map(function (item) {
           return (
             <section key={item.id}>
